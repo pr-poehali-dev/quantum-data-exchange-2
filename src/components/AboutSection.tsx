@@ -1,21 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle2, Sparkles } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 const values = [
-  { title: "Качество", description: "Высококлассные решения, соответствующие самым высоким стандартам" },
-  { title: "Доступность", description: "Профессиональные сайты по честным и прозрачным ценам" },
-  { title: "Прозрачность", description: "Четкая коммуникация без скрытых платежей" },
-  { title: "Клиентоориентированность", description: "Ваши цели и пожелания всегда в приоритете" },
-  { title: "Масштабируемость", description: "Сайты, которые растут вместе с вашим бизнесом" },
-  { title: "Гибкость", description: "Быстрая адаптация под меняющиеся потребности" },
+  { title: "Качество", description: "Курсы построены на когнитивной психологии и теории игр — без слов «покер» или «азарт»" },
+  { title: "Доступность", description: "Язык простой, без жаргона. Курсы подойдут даже тем, кто не в теме" },
+  { title: "Прозрачность", description: "Честное описание: что вы получите — и чего не будет" },
 ]
 
-const stats = [
-  { number: "50+", label: "Проектов" },
-  { number: "45+", label: "Довольных клиентов" },
-  { number: "30+", label: "Созданных логотипов" },
-  { number: "3+", label: "Года опыта" },
-]
+
 
 export function AboutSection() {
   return (
@@ -26,8 +18,8 @@ export function AboutSection() {
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
-            <Sparkles className="h-4 w-4" />
-            О CodeCraft
+            <Icon name="CheckCircle2" className="h-4 w-4" />
+            Наш подход
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
             Качество, которое{" "}
@@ -39,7 +31,7 @@ export function AboutSection() {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Создание сайта не должно быть дорогим. Мы разрабатываем индивидуальные решения, которые идеально соответствуют пожеланиям каждого клиента.
+            Мы создали образовательную платформу, которая помогает развивать аналитическое мышление через практику принятия решений.
           </p>
         </div>
 
@@ -51,7 +43,7 @@ export function AboutSection() {
             >
               <CardContent className="p-6">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+                  <Icon name="CheckCircle2" className="h-6 w-6 text-primary flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
                   <div>
                     <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
                       {value.title}
@@ -64,16 +56,7 @@ export function AboutSection() {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center group cursor-default">
-              <div className="text-4xl md:text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">
-                {stat.number}
-              </div>
-              <div className="text-muted-foreground font-medium">{stat.label}</div>
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
   )

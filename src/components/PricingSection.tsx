@@ -1,30 +1,29 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Check } from "lucide-react"
+import Icon from "@/components/ui/icon"
 import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
     name: "Базовый",
-    price: "99 900",
+    price: "790",
     features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+      "1 курс на выбор",
+      "PDF-материалы",
+      "Базовая практика",
+      "Доступ навсегда",
+      "Мгновенная доставка",
     ],
     highlighted: false,
   },
   {
     name: "Про",
-    price: "249 900",
+    price: "1 490",
     features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+      "2 курса на выбор",
+      "Чек-листы и шаблоны",
+      "Бонусные активы",
+      "Доступ ко всем обновлениям",
+      "Приоритетная поддержка",
     ],
     highlighted: true,
   },
@@ -32,11 +31,11 @@ const pricingTiers = [
     name: "Индивидуальный",
     price: "По запросу",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
-      "Персональный менеджер",
-      "6 месяцев поддержки",
+      "Персональный план обучения",
+      "1:1 консультация (30 мин)",
+      "Все курсы и материалы",
+      "Разбор личных кейсов",
+      "Прямая связь с экспертом",
     ],
     highlighted: false,
   },
@@ -60,10 +59,10 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Выберите <span className="text-primary">курс и ставку</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            Вы сами выбираете сумму — система подберёт курс под вас
           </p>
         </div>
 
@@ -102,7 +101,7 @@ export function PricingSection() {
                 <ul className="space-y-3 mb-8">
                   {tier.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3 group/item">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform" />
+                      <Icon name="Check" className="h-5 w-5 text-primary flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform" />
                       <span className="text-sm leading-relaxed">{feature}</span>
                     </li>
                   ))}
@@ -120,9 +119,9 @@ export function PricingSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Все платежи — через <span className="text-primary font-semibold">QR СБП</span> на расчётный счёт ИП.<br />
+            Автоматически формируется чек. <span className="text-primary font-semibold">Налог 1% в ХМАО</span>
           </p>
         </div>
       </div>

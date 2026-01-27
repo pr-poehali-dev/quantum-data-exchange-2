@@ -1,25 +1,25 @@
 import { useEffect, useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Quote } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 const testimonials = [
   {
     quote:
-      "Быстро и результативно! Искал логотип, который идеально представит мой бизнес, и CodeCraft меня не разочаровали. :)",
-    name: "Патрик",
+      "Теперь вижу, почему проигрываю в переговорах — и как это исправить",
+    name: "Андрей",
     role: "Предприниматель",
   },
   {
     quote:
-      "Для нашего фонда мы хотели полностью обновить старый сайт и автоматизировать множество ручных задач. CodeCraft создал для нас отличный продукт, полностью под наши нужды, с программным обеспечением, которое избавило нас от рутины.",
-    name: "Мехмет",
-    role: "Председатель НКО",
+      "Бонусные активы помогли сразу применить теорию. Это как симулятор для мозга",
+    name: "Мария",
+    role: "Менеджер",
   },
   {
     quote:
-      "Для нового бизнеса мне нужен был красивый свежий сайт как визитная карточка. Теперь у меня потрясающий и быстрый сайт, который еще и отлично индексируется в Google! Просто супер.",
-    name: "Юрий",
-    role: "Предприниматель",
+      "Наконец-то не мотивация, а конкретные инструменты",
+    name: "Алексей",
+    role: "Аналитик",
   },
 ]
 
@@ -68,7 +68,7 @@ export function TestimonialsSection() {
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <Card key={index} className="flex-shrink-0 w-[90vw] sm:w-[450px] border-none shadow-lg">
                 <CardContent className="p-8">
-                  <Quote className="h-8 w-8 text-primary mb-4" />
+                  <Icon name="Quote" className="h-8 w-8 text-primary mb-4" />
                   <p className="text-base sm:text-lg mb-6 leading-relaxed text-pretty min-h-[120px]">
                     {testimonial.quote}
                   </p>

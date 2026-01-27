@@ -1,27 +1,28 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Lightbulb, PaletteIcon, Rocket, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { Fragment } from "react"
+import Icon from "@/components/ui/icon"
 
 const steps = [
   {
-    icon: Lightbulb,
-    title: "Концепция и планирование",
+    icon: "Search",
+    title: "Выбор курса",
     description:
-      "Вместе обсуждаем вашу идею, цели и видение сайта. Разрабатываем четкий план, соответствующий вашим пожеланиям, с правильной структурой и функциональностью.",
+      "Подбор под ваш уровень и цели. Тарифы от 490 ₽ — вы сами выбираете сумму, система подберёт курс.",
     number: "01",
   },
   {
-    icon: PaletteIcon,
-    title: "Разработка и дизайн",
+    icon: "BookOpen",
+    title: "Обучение + практика",
     description:
-      "Наши разработчики и дизайнеры приступают к созданию сайта. Фокусируемся на стильном дизайне, удобном для пользователей и технически безупречном.",
+      "Получаете доступ к материалам мгновенно. Бонус — цифровые активы для отработки навыков (бесплатно).",
     number: "02",
   },
   {
-    icon: Rocket,
-    title: "Тестирование и запуск",
+    icon: "TrendingUp",
+    title: "Результат",
     description:
-      "Тщательно тестируем сайт для обеспечения оптимальной производительности. После вашего одобрения запускаем проект и остаемся на связи для поддержки.",
+      "Вы начинаете видеть паттерны, управлять эмоциями, принимать решения осознанно.",
     number: "03",
   },
 ]
@@ -34,7 +35,7 @@ export function ProcessSection() {
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
-            Наш процесс
+            Как это работает
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
             От <span className="text-primary">идеи</span> к <span className="text-primary">результату</span>
@@ -55,7 +56,7 @@ export function ProcessSection() {
                 </div>
                 <CardHeader>
                   <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 w-fit group-hover:scale-110 group-hover:rotate-6">
-                    <step.icon className="h-6 w-6" />
+                    <Icon name={step.icon} className="h-6 w-6" />
                   </div>
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">{step.title}</CardTitle>
                 </CardHeader>
