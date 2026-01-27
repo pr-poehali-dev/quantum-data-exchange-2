@@ -84,9 +84,9 @@ export function HeroSection() {
         </div>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 animate-fade-in-up text-balance">
-          Курс, который меняет{" "}
+          AXIOM —{" "}
           <span className="text-primary relative inline-block">
-            подход к решению
+            стратегическое мышление
             <svg
               className="absolute -bottom-2 left-0 w-full"
               height="12"
@@ -103,10 +103,11 @@ export function HeroSection() {
               />
             </svg>
           </span>
+          , которое работает
         </h1>
 
         <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-in-up animate-delay-100 leading-relaxed">
-          Мы не обучаем покеру. Мы тренируем стратегическое мышление — через практику, анализ и осознанные решения.
+          Тренируем стратегическое мышление — через практику, анализ и осознанные решения. Образовательные услуги без рисков.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animate-delay-200 mb-12">

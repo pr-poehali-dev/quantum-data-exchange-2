@@ -5,7 +5,7 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 const pricingTiers = [
   {
     name: "Базовый",
-    price: "790",
+    price: "490",
     features: [
       "1 курс на выбор",
       "PDF-материалы",
@@ -28,11 +28,11 @@ const pricingTiers = [
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
+    name: "Индивидуальная консультация",
     price: "По запросу",
     features: [
       "Персональный план обучения",
-      "1:1 консультация (30 мин)",
+      "1:1 консультация (30–60 мин)",
       "Все курсы и материалы",
       "Разбор личных кейсов",
       "Прямая связь с экспертом",
@@ -64,6 +64,29 @@ export function PricingSection() {
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Вы сами выбираете сумму — система подберёт курс под вас
           </p>
+        </div>
+
+        <div className="mb-12 max-w-2xl mx-auto">
+          <Card className="p-6 border-primary/20 bg-gradient-to-br from-background to-primary/5">
+            <h3 className="text-lg font-semibold mb-4 text-center">Гибкая оплата</h3>
+            <p className="text-sm text-muted-foreground text-center mb-4">
+              Укажите сумму от <span className="text-primary font-semibold">490 ₽</span>, и мы подберём курс под ваш бюджет
+            </p>
+            <div className="flex gap-3">
+              <input
+                type="number"
+                min="490"
+                placeholder="Введите сумму"
+                className="flex-1 px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+              <QuoteFormDialog packageName="Гибкая оплата" variant="default" className="whitespace-nowrap">
+                Подобрать курс
+              </QuoteFormDialog>
+            </div>
+            <p className="text-xs text-muted-foreground mt-3 text-center">
+              Минимальная сумма: 490 ₽ • Мгновенный доступ после оплаты
+            </p>
+          </Card>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

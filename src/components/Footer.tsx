@@ -9,6 +9,7 @@ export function Footer() {
             <h3 className="text-xl font-bold mb-4">AXIOM</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               ИП Павлушко Владислав Сергеевич<br />
+              ХМАО, г. Нижневартовск<br />
               2025 AXIOM. Все права защищены.
             </p>
           </div>
@@ -45,13 +46,25 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Контакты</h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Налог: УПД 1% (ХМАО)<br />
-              Оплата: СБП РФ<br />
-              Эл. касса: Да<br />
-              ИНН: по запросу
-            </p>
+            <h4 className="font-semibold mb-4">Документы</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#oferta" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Оферта
+                </a>
+              </li>
+              <li>
+                <a href="#policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Политика конфиденциальности
+                </a>
+              </li>
+              <li className="text-sm text-muted-foreground">
+                ИНН: по запросу
+              </li>
+              <li className="text-sm text-muted-foreground">
+                Налог: УПД 1% (ХМАО)
+              </li>
+            </ul>
           </div>
         </div>
       </div>
