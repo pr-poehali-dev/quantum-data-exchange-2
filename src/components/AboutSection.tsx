@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import Icon from "@/components/ui/icon"
 
 const values = [
-  { title: "Качество", description: "Курсы построены на когнитивной психологии и теории игр — без слов «покер» или «азарт»" },
+  { title: "Качество", description: "Курсы построены на когнитивной психологии и теории игр" },
   { title: "Доступность", description: "Язык простой, без жаргона. Курсы подойдут даже тем, кто не в теме" },
   { title: "Прозрачность", description: "Честное описание: что вы получите — и чего не будет" },
 ]
