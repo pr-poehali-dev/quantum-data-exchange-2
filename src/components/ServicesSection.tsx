@@ -1,42 +1,42 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Layout, Palette, Code, Share2, Target, Search } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 const services = [
   {
-    icon: Layout,
-    title: "Веб-дизайн",
+    icon: "Lightbulb",
+    title: "Стратегия как навык",
     description:
-      "Мы создаем сайты, которые не только визуально привлекательны, но и функциональны, удобны в использовании. В CodeCraft ваш бренд в центре внимания — мы обеспечиваем соответствие онлайн-присутствия целям и ценностям вашего бизнеса.",
+      "Не теория, а методики принятия решений в неопределённости.",
   },
   {
-    icon: Palette,
-    title: "Графический дизайн",
+    icon: "PlayCircle",
+    title: "Практика встроена",
     description:
-      "От логотипов до постов в соцсетях — мы создаем креативные графические решения, усиливающие ваш бренд. Наши дизайны уникальны и профессиональны, производя нужное впечатление на целевую аудиторию.",
+      "Бонусные цифровые активы для отработки навыков (бесплатно).",
   },
   {
-    icon: Code,
-    title: "Веб-разработка",
+    icon: "DollarSign",
+    title: "Гибкая оплата",
     description:
-      "Мы создаем технически надежные и перспективные сайты. Наша команда обеспечивает надежность, масштабируемость и скорость, помогая вашему бизнесу расти в цифровом пространстве.",
+      "От 490 ₽. Вы сами выбираете сумму — система подберёт курс.",
   },
   {
-    icon: Share2,
-    title: "Соцсети",
+    icon: "ShieldCheck",
+    title: "Без рисков",
     description:
-      "Сильное присутствие в социальных сетях сегодня решает многое. Мы поможем создать впечатление с помощью привлекательных визуалов и эффективных стратегий, чтобы ваш бренд оставался заметным.",
+      "Только образовательные услуги, никакого азарта или обмена.",
   },
   {
-    icon: Target,
-    title: "Результат",
+    icon: "Zap",
+    title: "Автоматизация",
     description:
-      "В CodeCraft мы нацелены на успех. Наш подход всегда направлен на достижение измеримых результатов, способствующих росту вашего бизнеса. Вместе находим то, что действительно работает.",
+      "Доступ к материалам мгновенно после оплаты.",
   },
   {
-    icon: Search,
-    title: "SEO",
+    icon: "Award",
+    title: "Экспертность",
     description:
-      "Видимость в поиске критически важна. Мы оптимизируем сайт с применением современных SEO-техник, чтобы вы были выше в Google и целевая аудитория легко вас находила.",
+      "Методики от профессионалов с опытом в аналитике и принятии решений.",
   },
 ]
 
@@ -63,7 +63,7 @@ export function ServicesSection() {
             >
               <CardHeader>
                 <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                  <service.icon className="h-6 w-6" />
+                  <Icon name={service.icon} className="h-6 w-6" />
                 </div>
                 <CardTitle className="text-xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
               </CardHeader>
