@@ -8,7 +8,7 @@ const steps = [
     icon: "Target",
     title: "Выбор формата",
     description:
-      "Определяете формат работы: объём консультаций, глубину анализа и срок сопровождения.",
+      "Определяете формат работы: объём информационно-консультационных услуг и срок сопровождения.",
     number: "01",
   },
   {
@@ -22,7 +22,7 @@ const steps = [
     icon: "Lightbulb",
     title: "Применение",
     description:
-      "Используете полученные рекомендации для принятия решений. Решения принимаете самостоятельно.",
+      "Используете полученную информацию для дальнейшей работы. Все решения принимаете самостоятельно.",
     number: "03",
   },
 ]
@@ -38,7 +38,7 @@ export function ProcessSection() {
             Как это работает
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            От <span className="text-primary">задачи</span> до <span className="text-primary">решения</span>
+            От <span className="text-primary">запроса</span> до <span className="text-primary">анализа</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
             Простой процесс: выбираете формат — получаете анализ и консультации — применяете рекомендации.

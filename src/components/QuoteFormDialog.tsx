@@ -57,9 +57,9 @@ export function QuoteFormDialog({ packageName, variant = "default", className, c
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px] max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle>Запросить расчет</DialogTitle>
+          <DialogTitle>Запрос на консультацию</DialogTitle>
           <DialogDescription>
-            Заполните форму, и мы свяжемся с вами в ближайшее время для бесплатной консультации.
+            Заполните форму, и мы свяжемся с вами для обсуждения формата работы.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -109,31 +109,31 @@ export function QuoteFormDialog({ packageName, variant = "default", className, c
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="package">Тариф *</Label>
+            <Label htmlFor="package">Формат *</Label>
             <Select
               value={formData.package}
               onValueChange={(value) => setFormData({ ...formData, package: value })}
             >
               <SelectTrigger id="package">
-                <SelectValue placeholder="Выберите тариф" />
+                <SelectValue placeholder="Выберите формат" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="Базовый">Базовый</SelectItem>
-                <SelectItem value="Про">Про</SelectItem>
-                <SelectItem value="Индивидуальный">Индивидуальный</SelectItem>
+                <SelectItem value="Базовый формат">Базовый формат</SelectItem>
+                <SelectItem value="Расширенный формат">Расширенный формат</SelectItem>
+                <SelectItem value="Персональное сопровождение">Персональное сопровождение</SelectItem>
                 <SelectItem value="Еще не определился">Еще не определился</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="message">Описание проекта *</Label>
+            <Label htmlFor="message">Описание задачи *</Label>
             <Textarea
               id="message"
               required
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              placeholder="Расскажите о проекте, пожеланиях и сроках..."
+              placeholder="Опишите вашу задачу или ситуацию..."
               rows={4}
             />
           </div>
