@@ -25,12 +25,17 @@ export function Footer() {
               </li>
               <li>
                 <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Преимущества
+                  Услуги
+                </a>
+              </li>
+              <li>
+                <a href="#formats" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Форматы
                 </a>
               </li>
               <li>
                 <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Пакеты услуг
+                  Стоимость
                 </a>
               </li>
               <li>

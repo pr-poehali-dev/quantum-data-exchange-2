@@ -2,9 +2,9 @@ import { Card, CardContent } from "@/components/ui/card"
 import Icon from "@/components/ui/icon"
 
 const values = [
-  { title: "Асинхронный формат", description: "Письменные ответы на ваши вопросы в установленный срок" },
-  { title: "Методические материалы", description: "Чек-листы, справочники и типовые рекомендации к консультациям" },
-  { title: "Прозрачность", description: "Чёткое описание объёма услуг, сроков и стоимости" },
+  { title: "Глубокая аналитика", description: "Разбираем ситуации по структуре: паттерны, риски, сценарии решений" },
+  { title: "Практичные инструменты", description: "Методические материалы, чек-листы, фреймворки для работы" },
+  { title: "Чёткий формат", description: "Письменные консультации в оговорённые сроки, без размытых обещаний" },
 ]
 
 
@@ -22,16 +22,16 @@ export function AboutSection() {
             Наш подход
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Консультации и{" "}
+            Анализ, который{" "}
             <span className="text-primary relative">
-              аналитика
+              работает
               <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
                 <path d="M0 4C50 2 150 6 200 4" stroke="currentColor" strokeWidth="2" className="text-primary" />
               </svg>
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Оказываем информационно-консультационные услуги в сфере развития аналитического мышления. Асинхронный формат, письменные консультации, методические материалы.
+            Мы помогаем разобраться в сложных задачах через структурированный анализ. Письменные консультации, методические материалы, конкретные рекомендации.
           </p>
         </div>
 

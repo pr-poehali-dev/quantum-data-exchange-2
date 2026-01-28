@@ -4,38 +4,38 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Консультационный пакет",
+    name: "Базовый формат",
     price: "990",
     features: [
       "5 письменных консультаций",
       "Ответ в течение 48 часов",
       "Типовые рекомендации",
       "Методические материалы",
-      "Срок действия: 30 дней",
+      "Срок: 30 дней",
     ],
     highlighted: false,
   },
   {
-    name: "Аналитический разбор",
+    name: "Расширенный формат",
     price: "1 990",
     features: [
       "10 письменных консультаций",
       "Глубокий анализ ситуаций",
       "Расширенные материалы",
       "Ответ в течение 24 часов",
-      "Срок действия: 60 дней",
+      "Срок: 60 дней",
     ],
     highlighted: true,
   },
   {
-    name: "Консультационное сопровождение",
+    name: "Персональное сопровождение",
     price: "По запросу",
     features: [
       "Неограниченные консультации",
-      "Персональный план развития",
+      "Индивидуальный план работы",
       "Регулярные аналитические отчёты",
       "Приоритетные ответы",
-      "Срок сопровождения: по договорённости",
+      "Срок: по договорённости",
     ],
     highlighted: false,
   },
@@ -59,10 +59,10 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Пакеты <span className="text-primary">консультационных услуг</span>
+            Стоимость <span className="text-primary">консультационных форматов</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Выберите объём консультаций и глубину аналитики под ваши задачи
+            Стоимость зависит от объёма консультаций, глубины анализа и срока сопровождения
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export function PricingSection() {
                   variant={tier.highlighted ? "default" : "outline"}
                   className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
                 >
-                  {tier.price === "По запросу" ? "Получить консультацию" : "Выбрать пакет"}
+                  {tier.price === "По запросу" ? "Обсудить формат" : "Выбрать формат"}
                 </QuoteFormDialog>
               </CardContent>
             </Card>
@@ -122,7 +122,7 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Оплата через <span className="text-primary font-semibold">СБП</span> на расчётный счёт ИП.<br />
+            Оплата консультационных услуг через <span className="text-primary font-semibold">СБП</span> на расчётный счёт ИП.<br />
             Автоматическое формирование чека. <span className="text-primary font-semibold">УСН «Доходы» 1%</span>
           </p>
         </div>

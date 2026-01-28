@@ -5,24 +5,24 @@ import Icon from "@/components/ui/icon"
 
 const steps = [
   {
-    icon: "MessageSquare",
-    title: "Выбор пакета услуг",
+    icon: "Target",
+    title: "Выбор формата",
     description:
-      "Определяете объём консультаций, глубину анализа и срок сопровождения по вашим задачам.",
+      "Определяете формат работы: объём консультаций, глубину анализа и срок сопровождения.",
     number: "01",
   },
   {
-    icon: "FileText",
-    title: "Оказание услуг",
+    icon: "Brain",
+    title: "Анализ и консультация",
     description:
-      "Получаете письменные консультации, аналитические разборы и методические материалы в установленный срок.",
+      "Получаете структурированные письменные консультации с аналитическими разборами и методическими материалами.",
     number: "02",
   },
   {
-    icon: "CheckCircle2",
-    title: "Применение рекомендаций",
+    icon: "Lightbulb",
+    title: "Применение",
     description:
-      "Используете полученные рекомендации и аналитику для развития аналитических навыков.",
+      "Используете полученные рекомендации для принятия решений. Решения принимаете самостоятельно.",
     number: "03",
   },
 ]
@@ -38,10 +38,10 @@ export function ProcessSection() {
             Как это работает
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            От <span className="text-primary">запроса</span> до <span className="text-primary">рекомендаций</span>
+            От <span className="text-primary">задачи</span> до <span className="text-primary">решения</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Асинхронный процесс оказания консультационных услуг: задаёте вопрос — получаете письменный ответ и рекомендации.
+            Простой процесс: выбираете формат — получаете анализ и консультации — применяете рекомендации.
           </p>
         </div>
 
