@@ -4,38 +4,38 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "490",
+    name: "Консультационный пакет",
+    price: "990",
     features: [
-      "1 курс на выбор",
-      "PDF-материалы",
-      "Базовая практика",
-      "Доступ навсегда",
-      "Мгновенная доставка",
+      "5 письменных консультаций",
+      "Ответ в течение 48 часов",
+      "Типовые рекомендации",
+      "Методические материалы",
+      "Срок действия: 30 дней",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "1 490",
+    name: "Аналитический разбор",
+    price: "1 990",
     features: [
-      "2 курса на выбор",
-      "Чек-листы и шаблоны",
-      "Бонусные активы",
-      "Доступ ко всем обновлениям",
-      "Приоритетная поддержка",
+      "10 письменных консультаций",
+      "Глубокий анализ ситуаций",
+      "Расширенные материалы",
+      "Ответ в течение 24 часов",
+      "Срок действия: 60 дней",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальная консультация",
+    name: "Консультационное сопровождение",
     price: "По запросу",
     features: [
-      "Персональный план обучения",
-      "1:1 консультация (30–60 мин)",
-      "Все курсы и материалы",
-      "Разбор личных кейсов",
-      "Прямая связь с экспертом",
+      "Неограниченные консультации",
+      "Персональный план развития",
+      "Регулярные аналитические отчёты",
+      "Приоритетные ответы",
+      "Срок сопровождения: по договорённости",
     ],
     highlighted: false,
   },
@@ -59,35 +59,14 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">курс и ставку</span>
+            Пакеты <span className="text-primary">консультационных услуг</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Вы сами выбираете сумму — система подберёт курс под вас
+            Выберите объём консультаций и глубину аналитики под ваши задачи
           </p>
         </div>
 
-        <div className="mb-12 max-w-2xl mx-auto">
-          <Card className="p-6 border-primary/20 bg-gradient-to-br from-background to-primary/5">
-            <h3 className="text-lg font-semibold mb-4 text-center">Гибкая оплата</h3>
-            <p className="text-sm text-muted-foreground text-center mb-4">
-              Укажите сумму от <span className="text-primary font-semibold">490 ₽</span>, и мы подберём курс под ваш бюджет
-            </p>
-            <div className="flex gap-3">
-              <input
-                type="number"
-                min="490"
-                placeholder="Введите сумму"
-                className="flex-1 px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <QuoteFormDialog packageName="Гибкая оплата" variant="default" className="whitespace-nowrap">
-                Подобрать курс
-              </QuoteFormDialog>
-            </div>
-            <p className="text-xs text-muted-foreground mt-3 text-center">
-              Минимальная сумма: 490 ₽ • Мгновенный доступ после оплаты
-            </p>
-          </Card>
-        </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {pricingTiers.map((tier, index) => (
@@ -134,7 +113,7 @@ export function PricingSection() {
                   variant={tier.highlighted ? "default" : "outline"}
                   className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
                 >
-                  {tier.price === "По запросу" ? "Связаться с нами" : "Выбрать тариф"}
+                  {tier.price === "По запросу" ? "Получить консультацию" : "Выбрать пакет"}
                 </QuoteFormDialog>
               </CardContent>
             </Card>
@@ -143,8 +122,8 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Все платежи — через <span className="text-primary font-semibold">QR СБП</span> на расчётный счёт ИП.<br />
-            Автоматически формируется чек. <span className="text-primary font-semibold">Налог 1% в ХМАО</span>
+            Оплата через <span className="text-primary font-semibold">СБП</span> на расчётный счёт ИП.<br />
+            Автоматическое формирование чека. <span className="text-primary font-semibold">УСН «Доходы» 1%</span>
           </p>
         </div>
       </div>

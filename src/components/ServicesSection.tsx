@@ -3,25 +3,25 @@ import Icon from "@/components/ui/icon"
 
 const services = [
   {
-    icon: "Award",
-    title: "Качество",
-    subtitle: "Не теория — а инструменты, которые работают",
+    icon: "FileText",
+    title: "Аналитические разборы",
+    subtitle: "Глубокий анализ ситуаций",
     description:
-      "Каждый курс создан практиками: методики проверены в реальных переговорах, кризисах и принятии решений. Никакой «воды» — только то, что вы примените завтра.",
+      "Получаете письменные аналитические материалы по запросу — разбор паттернов, стратегий и подходов к принятию решений.",
   },
   {
-    icon: "Unlock",
-    title: "Доступность",
-    subtitle: "Обучение без барьеров",
+    icon: "MessageSquare",
+    title: "Консультационное сопровождение",
+    subtitle: "Письменные ответы на вопросы",
     description:
-      "Простой язык, понятные примеры, адаптация под ваш уровень. Даже если вы «не в теме» — начнёте с первого урока.",
+      "Асинхронный формат: задаёте вопрос — получаете письменную консультацию в установленный срок. Без обязательных звонков.",
   },
   {
-    icon: "Eye",
-    title: "Прозрачность",
-    subtitle: "Вы знаете точно, что получаете — и чего нет",
+    icon: "BookOpen",
+    title: "Методические материалы",
+    subtitle: "Информационное сопровождение",
     description:
-      "В описании каждого курса: чёткий список материалов, сроки доступа, бонусы. Никаких скрытых условий.",
+      "Дополнительные информационные материалы к консультациям: чек-листы, типовые рекомендации, справочные документы.",
   },
 ]
 
@@ -32,13 +32,13 @@ export function ServicesSection() {
 
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mx-auto block w-fit">
-          Почему AXIOM
+          Наши услуги
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-balance">
-          Качество, Доступность, <span className="text-primary">Прозрачность</span>
+          Информационно-консультационные <span className="text-primary">услуги</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-pretty leading-relaxed text-lg">
-          Образование, которое работает: практика вместо теории, простота вместо сложности, честность вместо обещаний.
+          Оказываем консультационные и аналитические услуги в асинхронном формате. Письменные ответы, методические материалы, типовые рекомендации.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service, index) => (

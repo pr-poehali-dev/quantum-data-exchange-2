@@ -5,24 +5,24 @@ import Icon from "@/components/ui/icon"
 
 const steps = [
   {
-    icon: "Search",
-    title: "Выбор курса",
+    icon: "MessageSquare",
+    title: "Выбор пакета услуг",
     description:
-      "Подбор под ваш уровень и цели. Тарифы от 490 ₽ — вы сами выбираете сумму, система подберёт курс.",
+      "Определяете объём консультаций, глубину анализа и срок сопровождения по вашим задачам.",
     number: "01",
   },
   {
-    icon: "BookOpen",
-    title: "Обучение + практика",
+    icon: "FileText",
+    title: "Оказание услуг",
     description:
-      "Получаете доступ к материалам мгновенно. Бонус — цифровые активы для отработки навыков (бесплатно).",
+      "Получаете письменные консультации, аналитические разборы и методические материалы в установленный срок.",
     number: "02",
   },
   {
-    icon: "TrendingUp",
-    title: "Результат",
+    icon: "CheckCircle2",
+    title: "Применение рекомендаций",
     description:
-      "Вы начинаете видеть паттерны, управлять эмоциями, принимать решения осознанно.",
+      "Используете полученные рекомендации и аналитику для развития аналитических навыков.",
     number: "03",
   },
 ]
@@ -38,10 +38,10 @@ export function ProcessSection() {
             Как это работает
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            От <span className="text-primary">идеи</span> к <span className="text-primary">результату</span>
+            От <span className="text-primary">запроса</span> до <span className="text-primary">рекомендаций</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            В три простых шага превращаем вашу идею в мощное онлайн-присутствие, приносящее результат.
+            Асинхронный процесс оказания консультационных услуг: задаёте вопрос — получаете письменный ответ и рекомендации.
           </p>
         </div>
 
