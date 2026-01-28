@@ -41,7 +41,7 @@ export function ContactSection() {
             Связаться <span className="text-primary">с нами</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Есть вопросы о консультационных услугах? Напишите нам, и мы ответим в течение 24 часов.
+            Есть вопросы о консультационных услугах? Напишите нам, и мы ответим в течение 24 часов в рабочие дни.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export function ContactSection() {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Расскажите о вашем проекте..."
+                      placeholder="Опишите вашу ситуацию или задачу (контекст, ограничения, что уже пробовали)."
                       rows={6}
                       required
                       className="transition-all focus:scale-[1.02]"
